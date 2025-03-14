@@ -42,9 +42,9 @@
 
 body {
   color: var(--color-primary-dark);
-  line-height: 1.5;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  line-height: 1.5;
   font-weight: 400;
   margin: 0;
 }
@@ -130,6 +130,7 @@ ul {
 }
 
 .header-menu {
+  padding: 16px 0;
   display: flex;
   gap: 64px;
   flex-grow: 1;
@@ -139,9 +140,11 @@ ul {
 /*Hero section*/
 .hero-section {
   padding: 272px 0;
+  background-image: url(../images/bakery-atmosphere.jpg);
 }
 
 .hero-title {
+  margin-bottom: 0;
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
