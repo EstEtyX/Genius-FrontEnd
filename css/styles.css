@@ -141,6 +141,9 @@ ul {
 .hero-section {
   padding: 272px 0;
   background-image: url(../images/bakery-atmosphere.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .hero-title {
@@ -233,16 +236,13 @@ ul {
 
 .formats-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
-.formats-item {
+.formats-card {
   display: flex;
   flex-basis: calc((100% - 40px) / 3);
-}
-
-.format-card {
-  flex-grow: 1;
   padding: 24px;
   border: 1px solid lightcoral; /*remuv*/
   border-radius: 16px;
