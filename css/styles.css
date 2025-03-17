@@ -30,6 +30,7 @@
 :root {
   --color-primary-light: #faf4ea;
   --color-primary-dark: #31261a;
+  --color-secondary-dark: #a18268;
   --color-brand-light: #cfcfbc;
   --color-brand-normal: #819b57;
   --color-brand-dark: #465929;
@@ -43,6 +44,7 @@
 
 body {
   color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -223,6 +225,10 @@ ul {
   text-transform: uppercase;
 }
 
+.traditions-foto {
+  border-radius: 400px 400px 0 0px;
+}
+
 /*Chefs section*/
 .chefs-title {
   margin: 0 auto 80px;
@@ -235,6 +241,14 @@ ul {
   width: 352px;
   border: 2px solid var(--color-brand-light);
   content: "";
+}
+
+.chef-foto {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-secondary-dark);
+
+  border: 1px var(--color-secondary-dark);
 }
 
 .chef-title {
@@ -260,9 +274,9 @@ ul {
 }
 
 .format-card {
+  padding: 24px;
   height: 444px;
   flex-grow: 1;
-  padding: 24px;
   background-image: linear-gradient(
     180deg,
     rgba(49, 38, 26, 0) 55.21%,
@@ -292,6 +306,7 @@ ul {
 
 /*Footer*/
 .footer {
+  padding: 32px 76px;
   background-color: var(--color-primary-dark);
   background-image: url(../images/footer-background.png);
   background-repeat: no-repeat;
