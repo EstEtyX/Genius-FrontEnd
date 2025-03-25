@@ -148,7 +148,13 @@ ul {
 /*Hero section*/
 .hero-section {
   padding: 272px 0;
-  background-image: url(../images/bakery-atmosphere.jpg);
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url(../images/bakery-atmosphere.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -210,7 +216,7 @@ ul {
 }
 
 .traditions-content {
-  max-width: 710px;
+  max-width: 680px;
 }
 
 .traditions-title {
@@ -236,16 +242,25 @@ ul {
 
 /*Chefs section*/
 .chefs-title {
+  position: relative;
   margin: 0 auto 80px;
-  max-width: 520px;
 }
 
 .chefs-title::before,
 .chefs-title::after {
-  display: block;
+  position: absolute;
+  bottom: 24px;
   width: 352px;
   border: 2px solid var(--color-brand-light);
   content: "";
+}
+
+.chefs-title::before {
+  left: 0;
+}
+
+.chefs-title::after {
+  right: 0;
 }
 
 .chefs-list {
@@ -378,11 +393,34 @@ ul {
 /*Footer*/
 .footer {
   padding: 32px 0;
+  position: relative;
   background-color: var(--color-primary-dark);
   background-image: url(../images/footer-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+}
+
+.footer::before {
+  left: 0;
+  background-image: url(../images/decor-bread-smol.png);
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 120px;
+}
+
+.footer::after {
+  right: -36px;
+  background-image: url(../images/decor-bread-large.png);
+  width: 380px;
+  height: 190px;
 }
 
 .footer-container {
