@@ -92,8 +92,8 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1288px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 76px;
   padding: 0 24px;
 }
 
@@ -124,16 +124,16 @@ ul {
 }
 
 /*Header*/
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+.header {
+  /* position: absolute;   */
+  background-color: blue;
+  margin-top: 32px;
 }
 
-.header-nav {
+.header-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-grow: 1;
   gap: 40px;
 }
 
@@ -165,7 +165,7 @@ ul {
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .hero-title .accent {
@@ -417,7 +417,7 @@ ul {
 }
 
 .footer::after {
-  right: -36px;
+  right: -16px;
   background-image: url(../images/decor-bread-large.png);
   width: 380px;
   height: 190px;
