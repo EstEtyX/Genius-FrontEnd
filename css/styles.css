@@ -106,6 +106,7 @@ ul {
   border: 2px solid var(--color-brand-normal);
   border-radius: 8px;
   cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .button:hover {
@@ -117,6 +118,7 @@ ul {
 .link {
   color: var(--color-primary-light);
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 .link:hover {
@@ -125,9 +127,11 @@ ul {
 
 /*Header*/
 .header {
-  /* position: absolute; */
-  background-color: blue; /*remuv*/
-  margin-top: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
 }
 
 .header-container {
@@ -333,9 +337,13 @@ ul {
     rgba(49, 38, 26, 0.71) 72.92%,
     var(--color-primary-dark) 100%
   );
-
   border: 1px solid lightcoral; /*remuv*/
   border-radius: 16px;
+  transition: transform 0.2s;
+}
+
+.format-card:hover {
+  transform: scale(1.05);
 }
 
 .format-title {
@@ -363,6 +371,11 @@ ul {
   border-radius: 50%;
   border: 1px solid var(--color-primary-dark);
   cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 
 .carousel-button:hover {
@@ -452,6 +465,7 @@ ul {
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 .address-link:hover {
@@ -492,7 +506,9 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 20px;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.1s, visibility 0.1s;
 }
 
 .backdrop.is-hidden {
@@ -503,8 +519,10 @@ ul {
 
 .modal {
   position: relative;
-  width: 880px;
-  height: 880px;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
 }
@@ -513,4 +531,5 @@ ul {
   position: absolute;
   top: 40px;
   right: 40px;
+  cursor: pointer;
 }
