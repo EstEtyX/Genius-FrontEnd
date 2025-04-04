@@ -12,12 +12,12 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
+        <div class="header__container">
           <a href="index.html">
             <img src="./images/logo.svg" alt="логотип сучасної пекарні" />
           </a>
           <nav>
-            <ul class="header-menu">
+            <ul class="header__menu">
               <li>
                 <a class="link" href="#traditions-section">Наші традиції </a>
               </li>
@@ -41,41 +41,52 @@
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">
-            <span class="accent-lite">Сучасна</span> пекарня
+          <h1 class="hero-section__title">
+            <span class="text-brend-normal">Сучасна</span> пекарня
           </h1>
         </div>
       </section>
       <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">Великий попит на ринку</li>
-            <li class="advantages-item">Доступні за бюджетом формати</li>
-            <li class="advantages-item">Досвідчена управлінська команда</li>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">Великий попит на ринку</li>
+            <li class="advantages-section__item">
+              Доступні за бюджетом формати
+            </li>
+            <li class="advantages-section__item">
+              Досвідчена управлінська команда
+            </li>
           </ul>
         </div>
       </section>
       <section class="traditions-section section" id="traditions-section">
         <div class="container">
-          <div class="traditions-container">
-            <div class="traditions-content">
-              <h2 class="traditions-title section-title">
+          <div class="traditions-section__container">
+            <div class="traditions-section__content">
+              <h2 class="traditions-section__title section__title">
                 Новий формат традицій
               </h2>
-              <p class="traditions-text">
-                <span class="brand uppercase">shop bakery</span> — це пекарня,
-                яка взяла все найкраще, і зберегла смак традиційної випічки та
-                натуральність інгредієнтів.
+              <p>
+                <span class="text-brend-normal text-bold text-uppercase">
+                  shop bakery
+                </span>
+                — це пекарня, яка взяла все найкраще, і зберегла смак
+                традиційної випічки та натуральність інгредієнтів.
               </p>
-              <p class="traditions-text limited">
+              <p
+                class="traditions-section__text traditions-section__text--limited"
+              >
                 Ми працюємо як найвідоміші мережі—
-                <span class="brand">5 хвилин і замовлення готове</span>. А ще у
-                наших пекарень стильний дизайн та висока якість обслуговування!
+                <span class="text-brend-normal text-bold">
+                  5 хвилин і замовлення готове
+                </span>
+                . А ще у наших пекарень стильний дизайн та висока якість
+                обслуговування!
               </p>
             </div>
             <img
-              class="traditions-foto"
+              class="traditions-section__foto"
               src="./images/baker-man.jpg"
               alt="чоловік-пекар перевозить стілаж з батонами дивиться на нього та посміхається"
             />
@@ -84,21 +95,23 @@
       </section>
       <section class="chefs-section section" id="chefs-section">
         <div class="container">
-          <h2 class="chefs-title section-title centered">
+          <h2
+            class="chefs-section__title section__title section__title--centered"
+          >
             Наші найкращі <br />
-            <span class="accent-dark">шеф - кухарі</span>
+            <span class="text-brend-dark">шеф - кухарі</span>
           </h2>
-          <ul class="chefs-list">
-            <li class="chefs-item">
+          <ul class="chefs-section__list">
+            <li class="chefs-section__item">
               <article class="chef-card">
                 <img
-                  class="chef-foto"
+                  class="chef-card__foto"
                   src="./images/nastja-chef.jpg"
                   alt="шеф-повар Настя з посмішкою тримає в лодоні на тарілці круасан"
                 />
                 <div>
-                  <h3 class="chef-title">Настя</h3>
-                  <div class="chef-text">
+                  <h3 class="chef-card__title">Настя</h3>
+                  <div class="chef-card__text">
                     <p>Привіт, я Настя!</p>
                     <p>
                       Вже 10 років, я втілюю <br />
@@ -112,16 +125,16 @@
                 </div>
               </article>
             </li>
-            <li class="chefs-item">
+            <li class="chefs-section__item">
               <article class="chef-card">
                 <img
-                  class="chef-foto"
+                  class="chef-card__foto"
                   src="./images/vlad-chef.jpg"
                   alt="шеф-повар Влад запачканий борошном скляною пляшкою розкатує тісто"
                 />
                 <div>
-                  <h3 class="chef-title">Влад</h3>
-                  <div class="chef-text">
+                  <h3 class="chef-card__title">Влад</h3>
+                  <div class="chef-card__text">
                     <p>Привіт, я Влад!</p>
                     <p>
                       Мій кодитерський стаж вже 18 років.
@@ -141,23 +154,27 @@
       </section>
       <section class="formats-section section" id="formats-section">
         <div class="container">
-          <h2 class="formats-title section-title centered">Формати</h2>
-          <div class="formats-container">
+          <h2
+            class="formats-section__title section__title section__title--centered"
+          >
+            Формати
+          </h2>
+          <div class="formats-section__container">
             <button class="carousel-button" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
-            <ul class="formats-list">
-              <li class="formats-item">
+            <ul class="formats-section__list">
+              <li class="formats-section__item">
                 <article class="format-card">
                   <img
-                    class="format-image"
+                    class="format-card__image"
                     src="./images/walrus-format.jpg"
                     alt="Walrus format"
                   />
-                  <h3 class="format-title" lang="en">Walrus</h3>
-                  <div class="format-text">
+                  <h3 class="format-card__title" lang="en">Walrus</h3>
+                  <div class="format-card__text">
                     <p>Площа: до 120 м2</p>
                     <p>Меню: розширене меню</p>
                     <p>
@@ -168,15 +185,15 @@
                   </div>
                 </article>
               </li>
-              <li class="formats-item">
+              <li class="formats-section__item">
                 <article class="format-card">
                   <img
-                    class="format-image"
+                    class="format-card__image"
                     src="./images/horseshoe-format.jpg"
                     alt="Horseshoe format"
                   />
-                  <h3 class="format-title" lang="en">Horseshoe</h3>
-                  <div class="format-text">
+                  <h3 class="format-card__title" lang="en">Horseshoe</h3>
+                  <div class="format-card__text">
                     <p>Площа: до 25 м2</p>
                     <p>Меню: найпопулярніші позиції меню</p>
                     <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
@@ -184,15 +201,15 @@
                   </div>
                 </article>
               </li>
-              <li class="formats-item">
+              <li class="formats-section__item">
                 <article class="format-card">
                   <img
-                    class="format-image"
+                    class="format-card__image"
                     src="./images/handlebar-format.jpg"
                     alt="Handlebar format"
                   />
-                  <h3 class="format-title" lang="en">Handlebar</h3>
-                  <div class="format-text">
+                  <h3 class="format-card__title" lang="en">Handlebar</h3>
+                  <div class="format-card__text">
                     <p>Площа: до 15 м2</p>
                     <p>Меню: найпопулярніші позиції меню</p>
                     <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
@@ -211,69 +228,72 @@
       </section>
       <section class="contact-section section" id="contact-section">
         <div class="container">
-          <div class="contact-container">
-            <div class="contact-block">
-              <h2 class="contact-title section-title">
+          <div class="contact-section__container">
+            <div class="contact-section__block">
+              <h2 class="contact-section__title section__title">
                 Приєднуйся до мережі пекарень
               </h2>
-              <p class="contact-text accent-dark">
+              <p class="contact-section__text text-brend-dark">
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
               <form
-                class="contact-form"
+                class="form"
                 name="contact-form"
                 autocomplete="on"
                 novalidate
               >
-                <div class="form-field">
+                <div class="form__field">
                   <label class="form-label visually-hidden" for="user-name">
                     Ім'я
                   </label>
                   <input
-                    class="form-input"
+                    class="form__input"
                     type="text"
                     id="user-name"
                     name="user-name"
                     placeholder="Ім'я"
                   />
                 </div>
-                <div class="form-field">
+                <div class="form__field">
                   <label class="form-label visually-hidden" for="user-tel">
                     Телефон
                   </label>
                   <input
-                    class="form-input"
+                    class="form__input"
                     type="tel"
                     id="user-tel"
                     name="user-tel"
                     placeholder="Телефон"
                   />
                 </div>
-                <div class="form-field">
+                <div class="form__field">
                   <label class="form-label visually-hidden" for="user-email">
                     Електронна пошта
                   </label>
                   <input
-                    class="form-input"
+                    class="form__input"
                     type="email"
                     id="user-email"
                     name="user-email"
                     placeholder="Електронна пошта"
                   />
                 </div>
-                <button class="form-button button" type="submit">
+                <button
+                  class="form__button form__button--contact button"
+                  type="submit"
+                >
                   Замовити дзвінок
                 </button>
-                <p class="form-terms">
-                  Натискаючи на кнопку я погоджуюсь з <br />
-                  <a class="form-terms-link" href="#"
-                    >політикою конфіденційності</a
-                  >
+                <p class="form__terms">
+                  Натискаючи на кнопку я погоджуюсь <br />з
+                  <a class="form__terms form__terms--link" href="#">
+                    політикою конфіденційності
+                  </a>
                 </p>
               </form>
             </div>
             <iframe
-              class="contact-map"
+              class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10166.864930896621!2d30.60702475!3d50.42775845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c57ae29e4fad%3A0xee8865c515ad9030!2z0JHQtdGA0LXQt9C90Y_QutC4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1740405397330!5m2!1sru!2sua"
               style="border: 0"
               allowfullscreen=""
@@ -311,13 +331,13 @@
           <address class="footer-address">
             <ul class="address-list">
               <li>
-                <a class="address-link" href="tel:+380960000007">
+                <a class="link" href="tel:+380960000007">
                   + 38 (096) 000 00 07
                 </a>
               </li>
               <li>
                 <a
-                  class="address-link"
+                  class="link"
                   href="mailto:shopbakery@gmail.com"
                   target="_blank"
                   >shopbakery@gmail.com
@@ -325,7 +345,7 @@
               </li>
               <li>
                 <a
-                  class="address-link"
+                  class="link"
                   href="https://maps.app.goo.gl/6uGBFuiqEJESsgq29"
                   target="_blank"
                   >Україна, м. Київ, <br />
@@ -352,8 +372,8 @@
               </ul>
             </div>
           </address>
-          <div class="footer-privacy-policy">
-            <a class="address-link" href="#" target="_blank">
+          <div class="footer-polic">
+            <a class="link" href="#" target="_blank">
               Політика конфіденційності
             </a>
             <p class="footer-copyright">&copy; 2022 Дані захищені</p>
@@ -368,52 +388,58 @@
         <button class="modal-btn-close" type="button">close</button>
         <div class="modal-block">
           <h2 class="modal-title section-title">Замовити дзвінок</h2>
-          <p class="modal-text accent-dark">
+          <p class="modal-text text-brend-dark">
             Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
           </p>
-          <form name="modal-form" autocomplete="on">
-            <div class="form-field">
-              <label class="form-label visually-hidden" for="user-name">
+          <form class="form form--modal" name="modal-form" autocomplete="on">
+            <div class="form__field">
+              <label class="form__label visually-hidden" for="user-name">
                 Ім'я
               </label>
               <input
-                class="form-input"
+                class="form__input"
                 type="text"
                 id="user-name"
                 name="user-name"
                 placeholder="Ім'я"
               />
             </div>
-            <div class="form-field">
-              <label class="form-label visually-hidden" for="user-tel">
+            <div class="form__field">
+              <label class="form__label visually-hidden" for="user-tel">
                 Телефон
               </label>
               <input
-                class="form-input"
+                class="form__input"
                 type="tel"
                 id="user-tel"
                 name="user-tel"
                 placeholder="Телефон"
               />
             </div>
-            <div class="form-field">
-              <label class="form-label visually-hidden" for="user-email">
+            <div class="form__field">
+              <label class="form__label visually-hidden" for="user-email">
                 Електронна пошта
               </label>
               <input
-                class="form-input"
+                class="form__input"
                 type="email"
                 id="user-email"
                 name="user-email"
                 placeholder="Електронна пошта"
               />
             </div>
-            <button class="form-button button" type="submit">
+            <button
+              class="form__button form__button--modal button"
+              type="submit"
+            >
               Замовити дзвінок
             </button>
-            <p class="form-terms">
-              Натискаючи на кнопку я погоджуюсь з <br />
-              <a class="form-terms-link" href="#">політикою конфіденційності</a>
+            <p class="form__terms">
+              Натискаючи на кнопку я погоджуюсь <br />
+              з
+              <a class="form__terms form__terms--link" href="#"
+                >політикою конфіденційності
+              </a>
             </p>
           </form>
         </div>

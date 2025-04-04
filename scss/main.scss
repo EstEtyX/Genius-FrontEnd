@@ -4,6 +4,7 @@
 @import "./base";
 
 @import "./utils/utils";
+@import "./utils/texts";
 
 @import "./components/buttons";
 @import "./components/carousel-buttons";
@@ -23,23 +24,3 @@
 @import "./layouts/modal";
 @import "./layouts/section";
 @import "./layouts/traditions-section";
-
-/*Sections-titles*/
-.section-title {
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 1.3;
-}
-
-.section-title.centered {
-  text-align: center;
-}
-
-/*Accent-texts*/
-.accent-lite {
-  color: var(--color-brand-normal);
-}
-
-.accent-dark {
-  color: var(--color-brand-dark);
-}

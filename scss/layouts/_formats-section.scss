@@ -1,20 +1,22 @@
-.formats-title {
-  margin-bottom: 80px;
-}
+.formats-section {
+  &__title {
+    margin-bottom: 80px;
+  }
 
-.formats-container {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-}
+  &__container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
 
-.formats-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-.formats-item {
-  display: flex;
-  flex-basis: calc((100% - 40px) / 3);
+  &__item {
+    display: flex;
+    flex-basis: calc((100% - 40px) / 3);
+  }
 }

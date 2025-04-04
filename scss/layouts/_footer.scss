@@ -54,14 +54,6 @@
   gap: 16px;
 }
 
-.address-link {
-  color: var(--color-primary-light);
-  font-size: 16px;
-  font-weight: 300;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
 .address-link:hover {
   color: var(--color-brand-normal);
 }
@@ -79,7 +71,7 @@
   fill: var(--color-brand-normal);
 }
 
-.footer-privacy-policy {
+.footer-polic {
   display: flex;
   flex-direction: column;
   gap: 16px;
