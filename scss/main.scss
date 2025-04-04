@@ -21,17 +21,7 @@
 @import "./layouts/hero-section";
 @import "./layouts/modal";
 @import "./layouts/traditions-section";
-
-.section {
-  padding: 48px 0;
-}
-
-.container {
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 57px;
-}
+@import "./layouts/section";
 
 /*Sections-titles*/
 .section-title {
