@@ -1,0 +1,36 @@
+.contact-section {
+  padding-bottom: 96px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-block {
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-title {
+  margin-bottom: 16px;
+}
+
+.contact-text {
+  margin-bottom: 42px;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.contact-form .form-field {
+  margin-bottom: 24px;
+}
+
+.contact-map {
+  width: 100%;
+  max-width: 600px;
+  border: 0;
+  border-radius: 16px;
+}

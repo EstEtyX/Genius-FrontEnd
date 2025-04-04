@@ -1,0 +1,51 @@
+@import "./utils/fonts";
+@import "./utils/variables";
+
+@import "./base";
+
+@import "./utils/utils";
+
+@import "./components/advantages-section";
+@import "./components/buttons";
+@import "./components/carousel";
+@import "./components/chefs-section";
+@import "./components/contact-section";
+@import "./components/footer";
+@import "./components/form";
+@import "./components/formats-section";
+@import "./components/header";
+@import "./components/hero-section";
+@import "./components/links";
+@import "./components/modal";
+@import "./components/traditions-section";
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 76px;
+  padding: 0 24px;
+}
+
+/*Sections-titles*/
+.section-title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.section-title.centered {
+  text-align: center;
+}
+
+/*Accent-texts*/
+.accent-lite {
+  color: var(--color-brand-normal);
+}
+
+.accent-dark {
+  color: var(--color-brand-dark);
+}
