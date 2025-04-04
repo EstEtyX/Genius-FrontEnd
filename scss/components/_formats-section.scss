@@ -20,22 +20,35 @@
 }
 
 .format-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   padding: 24px;
   height: 444px;
-  flex-grow: 1;
+  color: var(--color-primary-light);
   background-image: linear-gradient(
     180deg,
     rgba(49, 38, 26, 0) 55.21%,
     rgba(49, 38, 26, 0.71) 72.92%,
     var(--color-primary-dark) 100%
   );
-  border: 1px solid lightcoral; /*remuv*/
   border-radius: 16px;
   transition: transform 0.2s;
 }
 
 .format-card:hover {
   transform: scale(1.05);
+}
+
+.format-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 16px;
 }
 
 .format-title {
