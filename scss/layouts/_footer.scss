@@ -6,78 +6,69 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
 
-.footer::before,
-.footer::after {
-  position: absolute;
-  bottom: 0;
-  content: "";
-}
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+  }
 
-.footer::before {
-  left: 0;
-  background-image: url(../images/decor-bread-smol.png);
-  background-repeat: no-repeat;
-  width: 180px;
-  height: 120px;
-}
+  &::before {
+    left: 0;
+    background-image: url(../images/decor-bread-smol.png);
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 120px;
+  }
 
-.footer::after {
-  right: -16px;
-  background-image: url(../images/decor-bread-large.png);
-  width: 380px;
-  height: 190px;
-}
+  &::after {
+    right: -16px;
+    background-image: url(../images/decor-bread-large.png);
+    width: 380px;
+    height: 190px;
+  }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
 
-.footer-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 
-.footer-address {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
 
-.address-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
+  &__social {
+    display: flex;
+    gap: 22px;
+  }
 
-.address-link:hover {
-  color: var(--color-brand-normal);
-}
+  &__icon {
+    fill: var(--color-primary-light);
 
-.footer-social {
-  display: flex;
-  gap: 22px;
-}
+    &:hover {
+      fill: var(--color-brand-normal);
+    }
+  }
 
-.footer-icon {
-  fill: var(--color-primary-light);
-}
+  &__polic {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 
-.footer-icon:hover {
-  fill: var(--color-brand-normal);
-}
-
-.footer-polic {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.footer-copyright {
-  color: var(--color-secondary-dark);
-  font-size: 14px;
+  &__copyright {
+    color: var(--color-secondary-dark);
+    font-size: 14px;
+  }
 }
